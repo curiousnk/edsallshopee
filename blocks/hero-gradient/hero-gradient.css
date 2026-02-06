@@ -6,9 +6,8 @@
 .hero-gradient {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
+  flex-flow: row-reverse wrap;
   align-items: center;
-  flex-wrap: wrap;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 80px 24px;
   min-height: 400px;
@@ -82,7 +81,7 @@
   width: 100%;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgb(0 0 0 / 30%);
 }
 
 @media (width >= 900px) {
