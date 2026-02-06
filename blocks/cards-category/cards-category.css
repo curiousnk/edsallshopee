@@ -8,12 +8,27 @@
 }
 
 .cards-category > ul > li {
-  border: 1px solid #dadada;
+  border: none;
+  border-radius: 15px;
   background-color: var(--background-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
 }
 
 .cards-category .cards-category-card-body {
   margin: 16px;
+}
+
+.cards-category .cards-category-card-body p:first-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.cards-category .cards-category-card-body p:last-child {
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .cards-category .cards-category-card-image {

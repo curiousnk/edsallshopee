@@ -255,3 +255,40 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Section heading overrides for categories/products/features sections */
+main > div:has(.cards-category) h2,
+main > div:has(.cards-product) h2,
+main > div:has(.cards-features) h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0;
+}
+
+main > div:has(.cards-category) h3,
+main > div:has(.cards-product) h3,
+main > div:has(.cards-features) h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Featured Products section background */
+main > div:has(.cards-product) {
+  background-color: #f8f9fa;
+  margin: 0 !important;
+  padding: 64px 16px;
+}
+
+/* Categories and features sections padding */
+main > div:has(.cards-category),
+main > div:has(.cards-features) {
+  padding: 64px 16px;
+}
+
+/* Hide metadata block */
+main > div:has(.metadata) {
+  display: none;
+}

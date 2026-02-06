@@ -8,12 +8,26 @@
 }
 
 .cards-features > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: none;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 32px;
 }
 
 .cards-features .cards-features-card-body {
-  margin: 16px;
+  margin: 0;
+}
+
+.cards-features .cards-features-card-body p:first-child {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.cards-features .cards-features-card-body p:last-child {
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .cards-features .cards-features-card-image {

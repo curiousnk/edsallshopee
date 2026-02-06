@@ -5,8 +5,19 @@
 
 .hero-gradient {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 80px 24px;
+  min-height: 400px;
+  color: #fff;
+}
+
+.hero-gradient > div {
+  flex: 1 1 50%;
+  min-width: 280px;
 }
 
 .hero-gradient h1,
@@ -16,10 +27,47 @@
 .hero-gradient h5,
 .hero-gradient h6,
 .hero-gradient p {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  color: #fff;
+}
+
+.hero-gradient > div:last-child h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.hero-gradient > div:last-child h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.hero-gradient > div:last-child p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.hero-gradient a:any-link {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 2.4em;
+  padding: 0.5em 1.2em;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.hero-gradient a:any-link:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero-gradient.no-image {
+  background: none;
 }
 
 .hero-gradient.no-image * {
@@ -27,21 +75,27 @@
 }
 
 .hero-gradient picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  display: block;
 }
 
 .hero-gradient img {
-  object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 @media (width >= 900px) {
   .hero-gradient {
-    padding: 40px 32px;
+    padding: 80px 32px;
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
+}
+
+@media (width < 900px) {
+  .hero-gradient {
+    flex-direction: column-reverse;
+    text-align: center;
   }
 }
