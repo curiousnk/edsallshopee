@@ -11,7 +11,7 @@ export default function parse(element, document) {
   // Find all category cards
   const cards = element.querySelectorAll('.category-card, .category-grid > div');
 
-  cards.forEach(card => {
+  cards.forEach((card) => {
     // Column 1: Image
     const imgCell = document.createElement('div');
     const img = card.querySelector('img');

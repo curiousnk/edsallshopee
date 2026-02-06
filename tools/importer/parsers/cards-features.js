@@ -11,7 +11,7 @@ export default function parse(element, document) {
   // Find all feature cards
   const cards = element.querySelectorAll('.feature-card, .features-grid > div');
 
-  cards.forEach(card => {
+  cards.forEach((card) => {
     // Single column: Content (title + description)
     const contentCell = document.createElement('div');
 
