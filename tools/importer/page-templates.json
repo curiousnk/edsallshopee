@@ -1,0 +1,31 @@
+{
+  "templates": [
+    {
+      "name": "AllShopee Homepage",
+      "urls": ["https://curiousnk.github.io/crappy/index.html"],
+      "description": "E-commerce homepage with hero, categories, products, and features sections",
+      "blocks": [
+        {
+          "name": "hero-gradient",
+          "instances": [".hero", ".hero-section", "[class*='hero']"],
+          "section": "hero"
+        },
+        {
+          "name": "cards-category",
+          "instances": [".categories .category-grid", ".categories .category-card", "#featured .category-grid"],
+          "section": "categories"
+        },
+        {
+          "name": "cards-product",
+          "instances": [".products .product-grid", ".products .product-card", ".product-grid"],
+          "section": "products"
+        },
+        {
+          "name": "cards-features",
+          "instances": [".features .features-grid", ".features .feature-card", ".features-grid"],
+          "section": "features"
+        }
+      ]
+    }
+  ]
+}
